@@ -82,12 +82,28 @@
         /* Hero Section */
         .hero {
             text-align: center;
-            padding: 70px 30px;
+            padding: 60px 30px;
             background-color: var(--card-bg);
             border-radius: 24px;
             margin-bottom: 50px;
             border: 1px solid var(--border-soft);
             box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+        }
+
+        /* Hero Image Profile Styling */
+        .hero-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent-blue);
+            box-shadow: 0px 8px 24px rgba(30, 58, 138, 0.12);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .hero-img:hover {
+            transform: scale(1.03);
         }
 
         .hero h2 {
@@ -147,7 +163,7 @@
             border-radius: 20px;
             border: 1px solid var(--border-soft);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.01);
+            box-shadow: 0 2px 8 rgba(0,0,0,0.01);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -284,6 +300,7 @@
             .grid { grid-template-columns: 1fr; }
             .section-title { font-size: 21px; }
             body { padding-bottom: 140px; }
+            .hero-img { width: 150px; height: 150px; }
         }
     </style>
 </head>
@@ -298,11 +315,14 @@
         
         <!-- Hero Section -->
         <section class="hero">
+            <!-- آپ کی تصویر بالکل ہیرو سیکشن کے شروع میں فٹ کر دی گئی ہے -->
+            <img src="my-photo.jpg" alt="Muhammad Aqib" class="hero-img">
+            
             <h2>Hello! I am Muhammad Aqib</h2>
             <p class="tags">Logo Designer | Video Editor | Professional Electrician | Islamic Scholar Student</p>
-            <p class="bio">
+            <div class="bio">
                 I am a multi-talented creator and professional specializing in Graphic Design (specifically Logo Design), Video Editing, and Electrical Solutions. Alongside my advanced technical qualifications, I am dedicated to higher Islamic education. I approach every project with complete responsibility, precision, and global corporate standards.
-            </p>
+            </div>
             <a href="https://wa.me/923195433062" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Connect on WhatsApp</a>
         </section>
 

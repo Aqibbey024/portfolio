@@ -33,7 +33,6 @@
             background-color: var(--primary-bg);
             color: var(--text-main);
             line-height: 1.8;
-            padding-bottom: 120px;
             font-weight: 400;
             -webkit-font-smoothing: antialiased;
         }
@@ -55,7 +54,7 @@
         .container {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 40px 20px 60px 20px; /* نیچے تھوڑی ایکسٹرا جگہ چھوڑی ہے */
         }
 
         /* Header / Navbar */
@@ -276,18 +275,16 @@
         .btn-facebook { background-color: #1e88e5; color: #fff; }
         .btn-facebook:hover { background-color: #1565c0; }
 
-        /* Footer */
+        /* Footer - یہاں پر فکسڈ پوزیشن ہٹا دی ہے تاکہ یہ ٹیکسٹ کو نہ چھپائے */
         footer {
             background-color: var(--card-bg);
             text-align: center;
             padding: 25px;
-            position: fixed;
-            bottom: 0;
+            margin-top: 50px;
             width: 100%;
             border-top: 1px solid var(--border-soft);
             font-size: 13.5px;
             color: var(--text-muted);
-            z-index: 99;
             box-shadow: 0 -2px 10px rgba(0,0,0,0.01);
         }
 
@@ -296,7 +293,6 @@
             .hero p.tags { font-size: 16px; }
             .grid { grid-template-columns: 1fr; }
             .section-title { font-size: 21px; }
-            body { padding-bottom: 140px; }
             .hero-img { width: 150px; height: 150px; }
         }
     </style>
@@ -312,7 +308,6 @@
         
         <!-- Hero Section -->
         <section class="hero">
-            <!-- یہاں پر تصویر کا نام بالکل درست کر دیا گیا ہے تاکہ وہ گٹ ہب کی فائل سے میچ کر جائے -->
             <img src="my-photo.jpg.jpg" alt="Muhammad Aqib" class="hero-img">
             
             <h2>Hello! I am Muhammad Aqib</h2>
